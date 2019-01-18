@@ -11,10 +11,8 @@ def computeLoss(X, y, theta):
 	N = X.shape[0]				# Nombres d'exemples d'apprentissage
 
 	######## Code a completer ###########
-	for n in range(N): 
-		loss += 0.0   #ICI TU DOIS CODER
-	
+	for n in range(N):
+		loss += (f(X[n], theta) - y[n])**2  #ICI TU DOIS CODER
+	loss = loss * (1.0/(2*N))
 	#####################################
-
-
-	return loss 
+	return loss

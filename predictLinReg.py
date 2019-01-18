@@ -13,7 +13,7 @@ def predictLinReg(X, theta):
 	######## Code a completer ###########
 
 	for n in range(N):
-		y[n] = 0.0						#ICI TU DOIS CODER
+		y[n] = X[n]*theta[1]+theta[0]						#ICI TU DOIS CODER
 
 	#####################################
 

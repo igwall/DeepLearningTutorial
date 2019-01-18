@@ -40,8 +40,8 @@ X = X_plot
 # = addBiasToDataset(X_plot)
 ################################################################################
 
-print("X = ")							 
-print X.ndim					 
+print("X = ")
+print X.ndim
 
 print("On recupere la deuxieme colonne pour les valeures a predire :")
 y = dataset[:,1]
@@ -67,7 +67,7 @@ line_y = theta[0] + line_X * theta[1]
 plt.plot(line_X, line_y, color='navy', label='Random parameters')
 plt.show(block=False)
 
-# Completez les fichiers predictLinReg computeLoss avant de poursuivre
+# Completez les fichiers  computeLoss avant de poursuivre
 J = computeLoss(X, y, theta)
 print("La valeur initiale de la loss est J = %f" % J)
 pause()
